@@ -1,0 +1,51 @@
+Parameters:
+  Environment:
+    Type: String
+    AllowedValues:
+      - Development
+      - Production
+      - QA
+    Description: Select your Environment
+  myKeyPair: 
+    Description: Amazon EC2 Key Pair
+    Type: "AWS::EC2::KeyPair::KeyName"
+
+Mappings:
+  EnvMap:
+    Development:
+      instanceType: "t2.large"
+      name: "Devoplement"
+    Production:
+      instanceType: "t2.medium"
+      name: "Production"
+    QA:
+      instanceType: "t2.xlarge"
+      name: "Prod"
+
+Resources:
+  MyInstance:
+    Type: AWS::EC2::Instance
+    Properties:
+      AvailabilityZone: ap-south-1a
+      InstanceType: !FindInMap [EnvMap, !Ref Environment, instanceType]
+      KeyName: !Ref myKeyPair
+      ImageId: ami-0a7cf821b91bcccbc
+      Tags:
+        - Key: "Name"
+          Value: !FindInMap [EnvMap, !Ref Environment, name]
+      SecurityGroups:
+        - !Ref InstanceSecurityGroup
+
+  InstanceSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Allow SSH and http  
+      SecurityGroupIngress:
+      - IpProtocol: tcp
+        FromPort: 22
+        ToPort: 22
+        CidrIp: 0.0.0.0/0
+      - IpProtocol: tcp
+        FromPort: 80
+        ToPort: 80
+        CidrIp: 0.0.0.0/0
