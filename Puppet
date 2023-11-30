@@ -1,0 +1,15 @@
+Chef and Puppet are automation platforms that allow you to use code to automate the configurations of your servers. They have many similar capabilities and use cases, but there are some differences: 
+
+Use case: Puppet is known to be better for managing large-scale deployments across data centers and the cloud. Chef is widely used to manager smaller, less complex infrastructure.
+
+Configuration language
+Chef uses Ruby DSL (Domain Specific Language), a developer-oriented language that's challenging to learn. Puppet employs the PuppetDSL, another difficult to learn language.
+
+Interoperability
+Both the Chef server and the Ruby server work only on a Linux/Unix machine.
+
+Using Puppet is like writing configuration files whereas using Chef is like programming the control of your nodes.
+Chef offers flexibility and a strong focus on infrastructure as code.
+Puppet excels in managing large-scale environments.
+
+
