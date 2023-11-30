@@ -1,0 +1,61 @@
+Chef is an open source technology developed by Opscode. Adam Jacob, co-founder of Opscode is known as the founder of Chef.
+This technology uses Ruby encoding to develop basic building blocks like recipe and cookbooks.
+It is developed on the basis of Ruby DSL language.
+Chef is used in infrastructure automation and helps in reducing manual and repetitive tasks for infrastructure management.
+Chef have got its own convention for different building blocks, which are required to manage and automate infrastructure.
+
+
+  Following are the most prominent features of Chef −
+Chef uses popular Ruby language to create a domain-specific language.
+Chef does not make assumptions on the current status of a node. It uses its mechanisms to get the current status of machine.
+Chef is ideal for deploying and managing the cloud server, storage, and software.
+  
+Advantages of Chef
+Chef offers the following advantages −
+Lower barrier for entry − As Chef uses native Ruby language for configuration, a standard configuration language it can be easily picked up by anyone having some development experience.
+Excellent integration with cloud − Using the knife utility, it can be easily integrated with any of the cloud technologies. It is the best tool for an organization that wishes to distribute its infrastructure on multi-cloud environment.
+
+
+
+  Disadvantages of Chef
+Some of the major drawbacks of Chef are as follows −
+One of the huge disadvantages of Chef is the way cookbooks are controlled. It needs constant babying so that people who are working should not mess up with others cookbooks.
+Only Chef solo is available.
+In the current situation, it is only a good fit for AWS cloud.
+It is not very easy to learn if the person is not familiar with Ruby.
+Documentation is still lacking.
+
+
+
+Attribute
+They are basically settings. They can be thought of as a key value pair of anything which one wants to use in the cookbook. There are several different kinds of attributes that can be applied, with a different level of precedence over the final settings that the node operates under.
+
+File
+It’s a subdirectory within the cookbook that contains any static file which will be placed on the nodes that uses the cookbooks. A recipe then can be declared as a resource that moves the files from that directory to the final node.
+
+Templates
+They are similar to files, but they are not static. Template files end with the .ebr extension, which means they contain embedded Ruby. They are mainly used to substitute an attribute value into the files to create the final file version that will be placed on the node.
+
+Metadata.rb
+It is used to manage the metadata about the package. This includes details like the name and details of the package. It also includes things such as dependency information that tells which cookbooks this cookbook needs to operate. This allows the Chef server to build the run-list of the node correctly and ensures that all of the pieces are transferred correctly.
+
+// Life Cycle
+Default Cookbook Structure
+C:\chef\cookbooks\nginx>tree 
+Folder PATH listing for volume Local Disk 
+Volume serial number is BE8B-6427 
+C: ├───attributes 
+├───definitions 
+├───files 
+│   └───default 
+├───libraries 
+├───providers 
+├───recipes 
+├───resources 
+└───templates 
+    └───default 
+
+
+  
+
+
