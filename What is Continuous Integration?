@@ -1,0 +1,42 @@
+Continuous Integration (CI) is a development practice in which the developers are needs to commit changes to the source code in a shared repository at regular intervals. Every commit made in the repository is then built. This allows the development teams to detect the problems early.
+Continuous integration requires the developers to have regular builds. The general practice is that whenever a code commit occurs, a build should be triggered.
+How Jenkins works:
+First of all, a developer commits the code to the source code repository. Meanwhile, the Jenkins checks the repository at regular intervals for changes.
+Soon after a commit occurs, the Jenkins server finds the changes that have occurred in the source code repository. Jenkins will draw those changes and will start preparing a new build.
+If the build fails, then the concerned team will be notified.
+If built is successful, then Jenkins server deploys the built in the test server.
+After testing, Jenkins server generates a feedback and then notifies the developers about the build and test results.
+It will continue to verify the source code repository for changes made in the source code and the whole process keeps on repeating.
+
+
+Jenkins Architecture
+
+
+Jenkins follows Master-Slave architecture to manage distributed builds. In this architecture, slave and master communicate through TCP/IP protocol.
+Jenkins architecture has two components:
+Jenkins Master/Server
+Jenkins Slave/Node/Build Server
+
+
+
+Jenkins Master
+The main server of Jenkins is the Jenkins Master. It is a web dashboard which is nothing but powered from a war file. By default it runs on 8080 port.
+With the help of Dashboard, we can configure the jobs/projects but the build takes place in Nodes/Slave. By default one node (slave) is configured and running in Jenkins server. We can add more nodes using IP address,
+user name and password using the ssh, jnlp or webstart methods.
+
+
+The server's job or master's job is to handle:
+Scheduling build jobs.
+Dispatching builds to the nodes/slaves for the actual execution.
+Monitor the nodes/slaves (possibly taking them online and offline as required).
+Recording and presenting the build results.
+A Master/Server instance of Jenkins can also execute build jobs directly.
+Jenkins Slave
+Jenkins slave is used to execute the build jobs dispatched by the master. We can configure a project to always run on a particular slave machine, or particular type of slave machine, or simple let the Jenkins to pick the next available slave/node.
+As we know Jenkins is developed using Java is platform independent thus Jenkins Master/Servers and Slave/nodes can be configured in any servers including Linux, Windows, and Mac.
+
+
+//In programming, build is a compiled version of a program. 
+Compile means to convert a program into a lower-level form or machine-code.
+
+
