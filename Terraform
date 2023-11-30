@@ -1,0 +1,26 @@
+Terraform is an Infrastructure as Code (IaC) tool. It's primarily used by DevOps teams to automate infrastructure tasks.
+Terraform is an open-source tool that helps create, change, and improve infrastructure. It's used to provision and manage infrastructure on-premises and in the cloud. 
+Terraform can manage infrastructure on any platform or service that supports an API. 
+Some of the main use cases of Terraform include: 
+Provisioning cloud resources
+Automating infrastructure deployments
+Versioning infrastructure
+Terraform is written in the Go language and created by HashiCorp. Users define and provide data center infrastructure using a declarative configuration language known as HashiCorp Configuration Language (HCL), or optionally JSON
+
+
+What is Terraform Used For?
+
+Terraform can be connected with different infrastructure hosts and achieve complex management scenarios and compliance across multiple clouds. Its configuration can be easily packaged, shared, and reused in the form of Terraform modules.
+
+
+How Does Terraform Work?
+
+
+Terraform can be thought of as consisting of two main parts: Terraform Core and Plugins.
+
+Terraform Core takes into consideration the current state and evaluates it against your desired configuration. It then proposes a plan to add or remove infrastructure components as needed. Next, it takes care of provisioning or decommissioning any resources if you choose to apply the plan. 
+
+Terraform Plugins provide a mechanism for Terraform Core to communicate with your infrastructure host or SaaS providers. Terraform Providers and Provisioners are examples of plugins as mentioned above. Terraform Core communicates with the plugins via Remote Procedure Call (RPC).
+
+
+
