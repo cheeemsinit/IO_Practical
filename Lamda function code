@@ -17,3 +17,6 @@ def lambda_handler (event, context):
   s3.Object(dest_bucket.name, dest_key).copy_from(CopySource= {'Bucket': obj.bucket_name, 'Key': obj.key})
   print('delete file from source bucket ' + dest_key)
   s3.Object(bucket.name, obj.key).delete()
+
+
+S3bucket => Iam(roles&policy)=>s3=>lamda(selectrole)=>s3>put>youknow>test
