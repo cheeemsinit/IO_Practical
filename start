@@ -1,0 +1,35 @@
+kms>s3>cloudtrial ( creteate trail(Log file SSE-KMS encryptionInfo unchek)).>checklogs 
+2s3bucket>Iamroles>policy>lamda>check
+Ec2>connect>wgetcode,bash>inspector(You Know) // inspector 
+securitygroup(all trafic) create(4instance min)run>connect>addwebiste>createtarget(select all instacne (include below) > create load balancer > (default vpc(selectzone)>select security group>select target grp > create laod balancer > copy dns and check.
+( sudo su , apt update - y , apt install apache2 -y, cd /var/www/html , rm index.html nano index.html , cntrl x enter) // load balancer
+
+
+//Autoscaling 
+
+create two sec grp 1for load balancer , 1for launch template
+
+
+
+
+// I am user 
+Create 3 User along with 3 group 
+
+User names: User1, User 2, User 3
+
+Group Name: Prod,Dev,Test
+
+Add User in their respective group and assign following policy to group
+
+Prod: Admin Acess
+
+Dev: Ec2 Full Access
+
+Test: S3Full Access
+
+Try to access S3 from Dev group user and  vice versa and observe results.
+
+Try to launch Ec2 and S3 Bucket from Prod User and observe result
+
+Then Delete all Instance and Resource that generate bill 
+
