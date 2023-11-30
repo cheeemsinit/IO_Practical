@@ -1,0 +1,26 @@
+CloudFormation is a service provided by AWS for designing our own infrastructure using code, i.e. infrastructure as code.
+Currently, CloudFormation supports two languages, JSON and YAML.You can write your code with one of the languages.
+CloudFormation comes with great features, being able to update your infrastructure whenever you want and also having the ability to delete the stack in case you don’t need it.
+A fascinating feature of CloudFormation is that it saves more time in building infrastructure and helps in focusing on the development.
+It is also possible to replicate our infrastructure in a short amount of time.
+It eliminates human error and works according to the code you have written. It consists of two main components,Stack and Templates.
+
+
+CloudFormation Template
+1.It consists of various sections like
+AWS Template Format Version
+Description
+Metadata
+Parameters
+Mappings
+Conditions
+Resources
+(Required Field)
+Outputs
+It is not mandatory that the template requires all the above-mentioned sections. By using only the Resources section, we will be able to create a template. 
+The resources section plays an important role in the template creation.
+For example, to create an EC2 instance, a template shall consist of various parameters such as key name, image ID, instance type.
+It is also possible to create two resources in the same template and refer to one from another, i.e. attaching an elastic IP with an EC2 instance.
+
+
+
