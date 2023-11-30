@@ -1,0 +1,8 @@
+sudo su 
+apt update - y
+apt install apache2 -y 
+cd /var/www/html
+rm index.html
+nano index.html 
+
+for save cntrl x enter y 
