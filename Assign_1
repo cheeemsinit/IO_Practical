@@ -1,0 +1,82 @@
+Infrastructure Orchestration Assignment 1
+
+
+1.	What is cloud Infrastructure? and write their components.
+Cloud infrastructure is the combination of server hardware, networking equipment, storage resources, and software required to create cloud-based applications. Applications on cloud infrastructure can be accessed remotely via a variety of networks, including wide-area networks (WANs), telecommunication services, and the internet.
+Components of Cloud Infrastructure:
+a)	Hypervisor :
+Hypervisor is a firmware or a low-level program which is a key to enable virtualization. It is used to divide and allocate cloud resources between several customers. As it monitors and manages cloud services/resources that’s why hypervisor is called as VMM (Virtual Machine Monitor) or (Virtual Machine Manager).
+b)	Management Software :
+Management software helps in maintaining and configuring the infrastructure. Cloud management software monitors and optimizes resources, data, applications and services. 
+c)	Deployment Software :
+Deployment software helps in deploying and integrating the application on the cloud. So, typically it helps in building a virtual computing environment.
+d)	Network :
+It is one of the key component of cloud infrastructure which is responsible for connecting cloud services over the internet. For the transmission of data and resources externally and internally network is required.
+e)	Server :
+Server which represents the computing portion of the cloud infrastructure is responsible for managing and delivering cloud services for various services and partners, maintaining security etc.
+f)	Storage :
+Storage represents the storage facility which is provided to different organizations for storing and managing data. It provides a facility of extracting another resource if one of the resource fails as it keeps many copies of storage.
+
+2.	How to build cloud infrastructure.
+For building a dedicated cloud infrastructure, there are several key requirements are needed to achieve it. Also, it is important to go for the best hosting providers for this since we have to invest a good amount of resources in it.
+Steps for Building a Cloud Computing Infrastructure –
+a)	First you should decide which technology will be the basis for your on-demand application infrastructure
+b)	Determine what delivery infrastructure you will be used to abstract the application infrastructure
+c)	Prepare the network infrastructure
+d)	Provide visibility and automation of management tasks
+e)	Integrate all the moving parts, such that the infrastructure and realizes the benefits of automation, abstraction and resource sharing
+
+3.	What is cloud virtualization and its types?
+Virtualization is the "creation of a virtual (rather than actual) version of something, such as a server, a desktop, a storage device, an operating system or network resources".
+Types:
+1)	Hardware Virtualization:
+When the virtual machine software or virtual machine manager (VMM) is directly installed on the hardware system is known as hardware virtualization.
+The main job of the hypervisor is to control and monitoring the processor, memory and other hardware resources.
+After virtualization of hardware system we can install different operating system on it and run different applications on those OS.
+
+2) Operating System Virtualization:
+When the virtual machine software or virtual machine manager (VMM) is installed on the Host operating system instead of directly on the hardware system is known as operating system virtualization.
+3) Server Virtualization:
+When the virtual machine software or virtual machine manager (VMM) is directly installed on the Server system is known as server virtualization.
+4) Storage Virtualization:
+Storage virtualization is the process of grouping the physical storage from multiple network storage devices so that it looks like a single storage device.
+Storage virtualization is also implemented by using software applications.
+
+4.	What is a data center? Standards For Data Center Infrastructure
+A data center is a facility of one or more buildings that house a centralized computing infrastructure, typically servers, storage, and networking equipment.
+In this world of apps, big data, and digital everything, you can’t stay on top of your industry without cutting-edge computing infrastructure. 
+Its primary role is to support all the crucial business applications and workloads that all organizations use to run their business.
+
+Standards For Data Center Infrastructure
+Tier I. Basic Capacity: includes an uninterruptible power supply for power sags, spikes, and outages. It protects against disruption from human errors but not unexpected outages or failures.
+Tier II. Redundant Capacity provides better safety against disruptions and maintenance opportunities. Redundant capacity components for power and cooling can be removed without shutting them down.
+Tier III. Concurrently Maintainable: facilitates redundant distribution paths to serve the critical environment. Any parts can be shut down and removed without impacting IT operation.
+Tier IV. Fault-Tolerant: allows any production capacity to be insulated from almost all types of failure. 
+
+5.	What is a PUE?
+Power usage effectiveness or PUE is a standard efficiency metric for power consumption in data centers. A simple definition of PUE is the ratio of total facility energy to IT equipment energy used in a data center and can be represented by the formula: 
+PUE  =
+Total facility energy usage
+	IT equipment energy usage
+
+
+6.	What is data center colocation and write benefits of colocation
+Colocation offers an additional option for organizations trying to find a middle ground between cloud computing and building dedicated data centers. With colocation services, businesses can rent space for their own computing hardware from a data center facility.
+Typically, the colocation customer leases space in server racks or rooms, and the colocation facility provides power, Internet connectivity and bandwidth, physical security, and environmental controls. Customers tend to be responsible for maintaining and administering their own hardware devices.
+Benefits of colocation
+1. Reliability
+2. Performance 
+3. Physical Security 
+4. Third-Party Maintenance 
+5. Speed 
+6. Skilled Staff 
+7. Scalability 
+8. Risk Management 
+
+
+7.	What is cloud orchestration? Models of cloud orchestration.
+Cloud Orchestration is the process of automating the tasks needed to manage connections and operations of workloads on private and public clouds. Cloud orchestration technologies integrate automated tasks and processes into a workflow to perform specific business functions.
+a)	In cloud orchestration environments, IaaS is most widely used. In either a dedicated or multi-tenant environment, IaaS providers provide network infrastructure, storage, and servers, as well as physical security. Virtualization services and orchestration tools are also available from IaaS providers, which can help IT operations run more smoothly within their cloud or across several clouds.
+b)	The PaaS model entails the service provider is in charge of the networks, servers, storage, operating systems, middleware, and data storage required to host the consumer's application. Under the pay-as-you-go approach, PaaS typically serves as a code execution platform.
+c)	The service provider makes an application available to the consumer via a web-based interface in the SaaS model. The customer can utilize the application in accordance with their service agreement's conditions, but he or she has no control or configuration options over the underlying infrastructure.
+Cloud orchestration tools allow all of these models to work together as one, automating across models and clouds, but often utilizing IaaS providers to automate.
